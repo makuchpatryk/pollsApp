@@ -196,19 +196,17 @@ open in xCode
 ## Issues
 
 
-[LICENCE issue](https://stackoverflow.com/questions/39760172/you-have-not-accepted-the-license-agreements-of-the-following-sdk-components)
-
+* [LICENCE issue](https://stackoverflow.com/questions/39760172/you-have-not-accepted-the-license-agreements-of-the-following-sdk-components)
 ```cordova plugin add cordova-android-support-gradle-release```
 
+* when show "Error: spawn EACCES"
 
-
-when show "Error: spawn EACCES"
 ```bash
 sudo chmod 755 (project)/platform/android/gradlew
 ```
 
 
-javascript memory crash
+* javascript memory crash
 ```bash
 node --max-old-space-size=4096 /usr/local/bin/ionic cordova build android --prod --release
 ```
