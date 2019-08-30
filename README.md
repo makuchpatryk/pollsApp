@@ -6,8 +6,15 @@ Table of Contents
   3. [Android](#android)
         1. [Install Android Studio](#install-android-studio)
             1. [Gradle for Linux](#gradle-forlinux)
-        2. [OR using Vundle:](#or-using-vundle)
-  4. [License](#license)
+            2. [Gradle for Ios](#gradle-for-ios)
+        2. [Release App Android](#release-app-android)
+  4. [Ios](#ios)
+        1. [xCode](#xcode)
+        2. [Release App Ios](#release-app-ios)
+  5. [Issues](#issues)
+  6. [Nvm](#nvm)
+
+
 
 # install Ionic
 
@@ -79,7 +86,7 @@ verify the gradle instalation
 gradle -v
 ```
 
-#### Gradle for IOS
+#### Gradle for Ios
 ```bash
 brew install gradle
 ```
@@ -102,9 +109,41 @@ javascript memory crash
 node --max-old-space-size=4096 /usr/local/bin/ionic cordova build android --prod --release
 ```
 
-### Install xCode
+### Release App Android
+```bash
+node --max-old-space-size=4096 /usr/local/bin/ionic cordova build android --prod --release
+```
 
-install xCode 10
+in main project folder
+```bash
+mkdir output
+
+cd output
+
+cp ../platforms/android/build/outputs/apk/release/android-release-unsigned.apk .
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore Scooploop.keystore android-release-unsigned.apk Scooploop
+~/Android/Sdk/build-tools/28.0.3/zipalign -v 4 android-release-unsigned.apk scooploop.apk
+```
+
+open this link and login as app.Scooploop.com
+[link](https://play.google.com/apps/publish/signup/)
+```
+click at Scooploop
+go to release managment
+then app releases 		
+choose track
+click manage
+click create release
+
+upload you .apk
+add desc
+save and review
+```
+
+
+##Ios
+
+### xCode
 
 Add platform ios
 ```bash
@@ -154,39 +193,7 @@ npm install -g ios-deploy
 ionic cordova run ios
 ```
 
-
-### Release App Android
-```bash
-node --max-old-space-size=4096 /usr/local/bin/ionic cordova build android --prod --release
-```
-
-in main project folder
-```bash
-mkdir output
-
-cd output
-
-cp ../platforms/android/build/outputs/apk/release/android-release-unsigned.apk .
-jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore Scooploop.keystore android-release-unsigned.apk Scooploop
-~/Android/Sdk/build-tools/28.0.3/zipalign -v 4 android-release-unsigned.apk scooploop.apk
-```
-
-open this link and login as app.Scooploop.com
-[link](https://play.google.com/apps/publish/signup/)
-```
-click at Scooploop
-go to release managment
-then app releases 		
-choose track
-click manage
-click create release
-
-upload you .apk
-add desc
-save and review
-```
-
-### Release App IOS
+### Release App Ios
 ```bash
 node --max-old-space-size=4096 /usr/local/bin/ionic cordova build ios --prod --release
 ```
@@ -197,11 +204,11 @@ open in xCode
 ```
 
 
-### Issues
+## Issues
 
 [LICENCE issue](https://stackoverflow.com/questions/39760172/you-have-not-accepted-the-license-agreements-of-the-following-sdk-components)
 
 ```cordova plugin add cordova-android-support-gradle-release```
 
-### NVM
+## NVM
 [LINK](https://www.liquidweb.com/kb/how-to-install-nvm-node-version-manager-for-node-js-on-ubuntu-12-04-lts/)
