@@ -5,7 +5,7 @@ Table of Contents
   * [Install Scooploop App](#install-scooploop-app)
   * [Android](#android)
         * [Install Android Studio](#install-android-studio)
-          * [Gradle for Linux](#gradle-forlinux)
+            * [Gradle for Linux](#gradle-forlinux)
         * [OR using Vundle:](#or-using-vundle)
   * [License](#license)
 
