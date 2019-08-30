@@ -1,13 +1,13 @@
 Table of Contents
 =================
 
-  * [install Ionic](#install-ionic)
-  * [Install Scooploop App](#install-scooploop-app)
-  * [Android](#android)
-        * [Install Android Studio](#install-android-studio)
-            * [Gradle for Linux](#gradle-forlinux)
-        * [OR using Vundle:](#or-using-vundle)
-  * [License](#license)
+  1 [install Ionic](#install-ionic)
+  2 [Install Scooploop App](#install-scooploop-app)
+  3 [Android](#android)
+        1 [Install Android Studio](#install-android-studio)
+            1 [Gradle for Linux](#gradle-forlinux)
+        2 [OR using Vundle:](#or-using-vundle)
+  4 [License](#license)
 
 # install Ionic
 
