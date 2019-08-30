@@ -1,14 +1,14 @@
 Table of Contents
 =================
 
-  * [Dockerfile.vim](#dockerfilevim)
+  * [install Ionic](#ionic)
   * [Screenshot](#screenshot)
   * [Installation](#installation)
         * [OR using Pathogen:](#or-using-pathogen)
         * [OR using Vundle:](#or-using-vundle)
   * [License](#license)
 
-# install Ionic
+# install Ionic {#ionic}
 
 ```bash
 npm install -g ionic@3.20.0
