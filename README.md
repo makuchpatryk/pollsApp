@@ -201,15 +201,18 @@ open in xCode
 ```cordova plugin add cordova-android-support-gradle-release```
 
 
+
 when show "Error: spawn EACCES"
 ```bash
 sudo chmod 755 (project)/platform/android/gradlew
 ```
 
+
 javascript memory crash
 ```bash
 node --max-old-space-size=4096 /usr/local/bin/ionic cordova build android --prod --release
 ```
+
 
 ## NVM
 [LINK](https://www.liquidweb.com/kb/how-to-install-nvm-node-version-manager-for-node-js-on-ubuntu-12-04-lts/)
