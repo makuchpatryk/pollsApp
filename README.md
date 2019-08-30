@@ -1,11 +1,11 @@
-#install Ionic
+# install Ionic
 
 ```bash
 npm install -g ionic@3.20.0
 npm install -g cordova
 ```
 
-##Install Scooploop app
+## Install Scooploop app
 
 ```bash
 mkdir sl3
@@ -18,9 +18,9 @@ test app on browser
 ionic serve
 ```
 
-##Android
+## Android
 
-###Install Android Studio
+### Install Android Studio
 
 install Java 8
 ```bash
@@ -42,9 +42,7 @@ export ANDROID_HOME=${HOME}/Android/Sdk
 export PATH="${ANDROID_HOME}/tools:${PATH}"
 ```
 
-install Gradle
-
-for linux
+#### Gradle for linux
 ```bash
 wget https://services.gradle.org/distributions/gradle-5.0-bin.zip -P /tmp
 sudo unzip -d /opt/gradle /tmp/gradle-*.zip
@@ -70,7 +68,7 @@ verify the gradle instalation
 gradle -v
 ```
 
-for ios
+#### Gradle for IOS
 ```bash
 brew install gradle
 ```
@@ -93,7 +91,7 @@ javascript memory crash
 node --max-old-space-size=4096 /usr/local/bin/ionic cordova build android --prod --release
 ```
 
-###Install xCode
+### Install xCode
 
 install xCode 10
 
@@ -146,7 +144,7 @@ ionic cordova run ios
 ```
 
 
-###Release App Android
+### Release App Android
 ```bash
 node --max-old-space-size=4096 /usr/local/bin/ionic cordova build android --prod --release
 ```
@@ -177,7 +175,7 @@ add desc
 save and review
 ```
 
-###Release App IOS
+### Release App IOS
 ```bash
 node --max-old-space-size=4096 /usr/local/bin/ionic cordova build ios --prod --release
 ```
@@ -188,11 +186,11 @@ open in xCode
 ```
 
 
-###Issues
+### Issues
 
 [LICENCE issue](https://stackoverflow.com/questions/39760172/you-have-not-accepted-the-license-agreements-of-the-following-sdk-components)
 
 ```cordova plugin add cordova-android-support-gradle-release```
 
-###NVM
+### NVM
 [LINK](https://www.liquidweb.com/kb/how-to-install-nvm-node-version-manager-for-node-js-on-ubuntu-12-04-lts/)
