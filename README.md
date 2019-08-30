@@ -1,3 +1,11 @@
+# install Ionic
+
+```bash
+npm install -g ionic@3.20.0
+npm install -g cordova
+```
+
+
 Table of Contents
 =================
 
@@ -13,15 +21,6 @@ Table of Contents
         2. [Release App Ios](#release-app-ios)
   5. [Issues](#issues)
   6. [Nvm](#nvm)
-
-
-
-# install Ionic
-
-```bash
-npm install -g ionic@3.20.0
-npm install -g cordova
-```
 
 ## Install Scooploop App
 
@@ -97,16 +96,6 @@ ionic cordova run android
 open project in android studio and install all upgrade needed
 ```bash
 (project)/platform/android
-```
-
-when show "Error: spawn EACCES"
-```bash
-sudo chmod 755 (project)/platform/android/gradlew
-```
-
-javascript memory crash
-```bash
-node --max-old-space-size=4096 /usr/local/bin/ionic cordova build android --prod --release
 ```
 
 ### Release App Android
@@ -206,9 +195,21 @@ open in xCode
 
 ## Issues
 
+
 [LICENCE issue](https://stackoverflow.com/questions/39760172/you-have-not-accepted-the-license-agreements-of-the-following-sdk-components)
 
 ```cordova plugin add cordova-android-support-gradle-release```
+
+
+when show "Error: spawn EACCES"
+```bash
+sudo chmod 755 (project)/platform/android/gradlew
+```
+
+javascript memory crash
+```bash
+node --max-old-space-size=4096 /usr/local/bin/ionic cordova build android --prod --release
+```
 
 ## NVM
 [LINK](https://www.liquidweb.com/kb/how-to-install-nvm-node-version-manager-for-node-js-on-ubuntu-12-04-lts/)
