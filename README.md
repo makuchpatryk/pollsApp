@@ -2,9 +2,10 @@ Table of Contents
 =================
 
   * [install Ionic](#install-ionic)
-  * [Screenshot](#screenshot)
-  * [Installation](#installation)
-        * [OR using Pathogen:](#or-using-pathogen)
+  * [Install Scooploop App](#install-scooploop-app)
+  * [Android](#android)
+        * [Install Android Studio](#install-android-studio)
+          * [Gradle for Linux](#gradle-forlinux)
         * [OR using Vundle:](#or-using-vundle)
   * [License](#license)
 
@@ -15,7 +16,7 @@ npm install -g ionic@3.20.0
 npm install -g cordova
 ```
 
-## Install Scooploop app
+## Install Scooploop App
 
 ```bash
 mkdir sl3
@@ -52,7 +53,7 @@ export ANDROID_HOME=${HOME}/Android/Sdk
 export PATH="${ANDROID_HOME}/tools:${PATH}"
 ```
 
-#### Gradle for linux
+#### Gradle for Linux
 ```bash
 wget https://services.gradle.org/distributions/gradle-5.0-bin.zip -P /tmp
 sudo unzip -d /opt/gradle /tmp/gradle-*.zip
