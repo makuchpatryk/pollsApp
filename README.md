@@ -1,7 +1,7 @@
 Table of Contents
 =================
 
-  * [install Ionic](#ionic)
+  * [install Ionic](#install-ionic)
   * [Screenshot](#screenshot)
   * [Installation](#installation)
         * [OR using Pathogen:](#or-using-pathogen)
