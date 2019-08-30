@@ -8,7 +8,7 @@ Table of Contents
         * [OR using Vundle:](#or-using-vundle)
   * [License](#license)
 
-# install Ionic {#ionic}
+# install Ionic
 
 ```bash
 npm install -g ionic@3.20.0
